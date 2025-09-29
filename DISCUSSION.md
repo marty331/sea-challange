@@ -46,3 +46,22 @@ db/index.ts
 ## Third PR - style-ui
 
 Add stying to the app/page.tsx file.  Utilized tailwind to apply stying for the overall page, search section and table section.  Calculate the number of advocates after each filter is applied so the user can quickly see how many they are viewing from the total available.
+
+
+## Improvements
+
+If I had additional time I would look at adding the following - 
+
+Backend:
+
+Add pagination to the API instead of returning all data.
+Add search filtering to the API (vs on the frontend).
+Include database indexes on searchable fields.
+Add caching (Redis) for common search queries.
+
+Frontend:
+
+Add pagination to the frontend.
+Add debouncing to prevent filtering being called on every keystroke.
+Show loading states between searches to provide user visual feedback.
+Render only rows that are visible in the viewport.
