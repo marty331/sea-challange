@@ -26,7 +26,7 @@ Now I have a fully populated database.
 
 Fix UI related issues - 
 
-page.tsx:
+app/page.tsx:
 - Created Advocate type to prevent errors in the HTML
 - Added Advocate type to both useState instances.
 - Changed the name of the onChange function to filterData.
@@ -36,9 +36,13 @@ page.tsx:
 - Added proper tr element to thead to prevent error.
 - Added index values to map functions to prevent key error for each row.
 
-route.ts
+app/api/advocates/route.ts
 - Corrected import path and removed unneeded import.
 - Select data from database and removed hardcoded data selection.
 
 db/index.ts
 - Created proper database reference file to be able to query db.
+
+## Third PR - style-ui
+
+Add stying to the app/page.tsx file.  Utilized tailwind to apply stying for the overall page, search section and table section.  Calculate the number of advocates after each filter is applied so the user can quickly see how many they are viewing from the total available.
