@@ -21,3 +21,24 @@ docker-compose exec frontend npm run seed
 ```
 
 Now I have a fully populated database.
+
+## Second PR - fix-ui-issues
+
+Fix UI related issues - 
+
+page.tsx:
+- Created Advocate type to prevent errors in the HTML
+- Added Advocate type to both useState instances.
+- Changed the name of the onChange function to filterData.
+- Added const for searchTermElement then checked to see if value exists to prevent null value exception.
+- Lowercased the searchTerm and searchable values for better matching.
+- Changed the name of the onClick function to resetSearch.
+- Added proper tr element to thead to prevent error.
+- Added index values to map functions to prevent key error for each row.
+
+route.ts
+- Corrected import path and removed unneeded import.
+- Select data from database and removed hardcoded data selection.
+
+db/index.ts
+- Created proper database reference file to be able to query db.
