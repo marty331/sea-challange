@@ -32,3 +32,5 @@ async function setup() {
 };
 
 setup();
+
+export default setup;
